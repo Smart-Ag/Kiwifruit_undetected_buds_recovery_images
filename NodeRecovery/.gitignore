@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.idea/
+.vscode/
+
+# Research inputs, model weights, and generated outputs are not included.
+inputs/
+models/
+runs/
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.ply
+*.xlsx
+*.xls
+*.png
+*.jpg
+*.jpeg
+
+# Local configurations may contain machine-specific input paths.
+config.json
+config.*.local.json

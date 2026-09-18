@@ -1,0 +1,46 @@
+{
+  "output_dir": "runs/winter_example",
+  "field_data": "inputs/all_raw_data_ln.xlsx",
+  "field_sheet": 0,
+  "train_ratio": 0.8,
+  "random_seed": 42,
+  "mask_probability": 0.5,
+  "ground_truth_path": "inputs/ground_truth.xlsx",
+  "recovery_tolerance_mm": 30.0,
+  "camera": {
+    "fx": 693.553467,
+    "fy": 693.492859,
+    "cx": 643.257935,
+    "cy": 358.344116
+  },
+  "depth_scale_m": 0.001,
+  "z_range_m": [0.45, 1.5],
+  "voxel_size_m": 0.003,
+  "denoise_sig_s_m": 0.018,
+  "denoise_sig_v_m": 0.008,
+  "denoise_sig_r_m": 0.012,
+  "denoise_iterations": 3,
+  "skeleton_support_m": 0.12,
+  "skeleton_samples": 180,
+  "skeleton_smooth_window": 5,
+  "pnm_mean_il_m": 0.08406,
+  "pnm_std_il_m": 0.02730,
+  "pnm_kmax": 25,
+  "pnm_credible_level": 0.9,
+  "prominence_m": 0.0022,
+  "minimum_peak_separation_m": 0.04,
+  "dedup_tolerance_m": 0.025,
+  "cases": [
+    {
+      "cane_id": 1,
+      "name": "cane_1",
+      "rgb": "inputs/cane_1/rgb.png",
+      "depth": "inputs/cane_1/depth.png",
+      "fc_mask": "inputs/cane_1/fc_mask.png",
+      "fpv_mask": "inputs/cane_1/fpv_mask.png",
+      "bud_pixels_csv": "inputs/cane_1/bud_pixels.csv",
+      "mend_fc_mask": true,
+      "radial_clean": false
+    }
+  ]
+}
